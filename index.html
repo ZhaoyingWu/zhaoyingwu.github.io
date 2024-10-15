@@ -1,121 +1,128 @@
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
-
-    <!-- begin SEO -->
-    <title>Your Name - Homepage</title>
-    <meta property="og:locale" content="en">
-    <meta property="og:site_name" content="Your Name">
-    <meta property="og:title" content="Your Name">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta property="og:description" content="Your Position, Your Research Interests">
-
-    <link rel="canonical" href="https://yourwebsite.com/">
-    <!-- end SEO -->
-
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
+    <title>个人网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/academicons.css"/>
+        header {
+            
+            color: rgb(0, 0, 0);
+            padding: 20px 0;
+            text-align: center;
+        }
 
-    <meta http-equiv="cleartype" content="on">
-    <base target="_blank">
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    
-    <meta name="theme-color" content="#ffffff">
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
 
-    <!-- MathJax for equations -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-  </head>
+        h2 {
+            text-align: center;
+            color: #494848;
+        }
 
-  <body>
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav">
-            <button><div class="navicon"></div></button>
-            <ul class="visible-links">
-              <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
-              <li class="masthead__menu-item"><a href="#about-me">About Me</a></li>
-              <li class="masthead__menu-item"><a href="#news">News</a></li>
-              <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
-              <li class="masthead__menu-item"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    <div id="main" role="main">
-      <div class="sidebar sticky">
-        <div itemscope itemtype="http://schema.org/Person" class="profile_box">
-          <div class="author__avatar">
-            <img src="images/yourphoto.jpg" class="author__avatar" alt="Your Name">
-          </div>
-          <div class="author__content">
-            <h3 class="author__name">Your Name</h3>
-            <p class="author__bio">Your Position</p>
-          </div>
-          <div class="author__urls-wrapper">
-            <ul class="author__urls social-icons">
-              <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> City/Country</li>
-              <li><a href="mailto:youremail@domain.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
-              <li><a href="https://www.researchgate.net"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
-              <li><a href="https://orcid.org/your-orcid"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        .skills li {
+            background-color: #e4e4e4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-      <!-- About Me Section -->
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <section class="page__content" itemprop="text">
-          <h1 id="about-me">About Me</h1>
-          <p>Your bio and professional background here. Mention your research interests, educational background, and any professional experience.</p>
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e4e4e4;
+            color: rgb(0, 0, 0);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
 
-          <!-- News Section -->
-          <h1 id="news">🔥 News</h1>
-          <ul>
-            <li><em>2024.10</em>: 🎉 One paper is accepted by <strong>Journal/Conference Name</strong></li>
-            <li><em>2024.01</em>: Started position as a Professor at University XYZ</li>
-            <!-- Add more news -->
-          </ul>
+    <!-- 头部 -->
+    <header>
+        <h1>欢迎来到我的个人网站</h1>
+    </header>
 
-          <!-- Publications Section -->
-          <h1 id="publications">📝 Publications</h1>
-          <div class="paper-box">
-            <div class="paper-box-text">
-              <p><a href="publication-link">Title of Your Paper</a></p>
-              <p><strong>Your Name</strong>, Co-author Names</p>
-              <ul>
-                <li>Brief description of the paper, methodology, or findings.</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Add more publications -->
+    <!-- 导航栏 -->
+    <!-- <nav>
+        <a href="#about">关于我</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系我</a>
+    </nav> -->
 
-          <!-- Contact Section -->
-          <h1 id="contact">💬 Contact</h1>
-          <ul>
-            <li>Email: youremail@domain.com</li>
-            <li>Address: Your Office, University XYZ, City, Country</li>
-          </ul>
-        </section>
-      </article>
-    </div>
+    <!-- 关于我 -->
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好！我是吴昭颖，一名西北工业大学的学生，对大模型领域充满热情，并且拥有丰富的项目经验。</p>
+    </section>
 
-    <!-- External JS -->
-    <script src="assets/js/main.min.js"></script>
-  </body>
+    <!-- 技能 -->
+    <!-- <section id="skills" class="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React.js</li>
+            <li>数据库管理</li>
+        </ul>
+    </section> -->
+
+    <!-- 项目 -->
+<!--     <section id="projects">
+        <h2>项目展示</h2>
+        <p>以下是我参与的部分项目：</p>
+        <ul>
+            <li>项目 1：描述你完成的项目或作品，包含主要技术或实现的功能。</li>
+            <li>项目 2：描述你完成的项目或作品，包含主要技术或实现的功能。</li>
+            <li>项目 3：描述你完成的项目或作品，包含主要技术或实现的功能。</li>
+        </ul>
+    </section> -->
+
+    <!-- 联系我 -->
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>如果你有任何问题或想要合作，请通过以下方式联系我：</p>
+        <p>Email: zhaoyingwu@mail.nwpu.edu.cn</p>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 Zhaoying Wu | 个人网站</p>
+    </footer>
+
+</body>
 </html>
